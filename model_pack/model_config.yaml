@@ -1,0 +1,4 @@
+llm_model: qwen2.5:7b
+embedding_model: nomic-embed-text
+ollama_host: 127.0.0.1
+ollama_port: 11434

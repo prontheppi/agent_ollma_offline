@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+dist/
+build/
+*.spec
+
+# Local runtime data is created on the user's machine.
+data/app.db
+data/uploads/*
+data/processed/*
+data/exports/*
+data/vector_db/*
+data/logs/*
+!data/**/.gitkeep
+
+# Windows and editor noise
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,70 @@
+:root {
+  color: #172033;
+  background: #f5f7fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+.shell {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #ffffff;
+  border-right: 1px solid #d9dee8;
+  padding: 20px;
+}
+
+.sidebar nav {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.sidebar button {
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  color: #26324a;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.sidebar button:hover {
+  background: #eef2f8;
+}
+
+.content {
+  padding: 28px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9dee8;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.status-bar {
+  background: #172033;
+  bottom: 0;
+  color: #ffffff;
+  grid-column: 1 / -1;
+  padding: 8px 16px;
+  position: sticky;
+}
+
+.source-list {
+  display: grid;
+  gap: 8px;
+}
