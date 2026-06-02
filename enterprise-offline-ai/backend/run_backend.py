@@ -1,4 +1,5 @@
 from app.config import get_settings
+from app.main import app
 from app.utils.offline_guard import validate_backend_host
 
 
@@ -8,7 +9,7 @@ def main() -> None:
     settings = get_settings()
     validate_backend_host(settings.backend.host)
     uvicorn.run(
-        "app.main:app",
+        app,
         host=settings.backend.host,
         port=settings.backend.port,
         reload=False,
